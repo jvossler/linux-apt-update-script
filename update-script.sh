@@ -38,11 +38,12 @@ done
 
 echo "Exit status code:  $?"
 
-if [ $? -eq 0 ]
+if
+	[ $? -eq 0 ]
 then
        echo "System successfully updated on $(date)" >> /home/j/scripts/update-log.txt
 elif
-       [ $? -ne 0 ]
+	[ $? -ne 0 ]
 then
        echo "Error running $CMD on $(date), exit status code: $?" >> /home/j/scripts/update-log.txt
 fi
