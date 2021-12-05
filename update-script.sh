@@ -22,6 +22,10 @@ do
 	then
 		echo "$CMD was successfully run, exit status code: $?"
 		echo ""
+	elif
+		[ $? -ne 0 ]
+	then
+		echo"ERROR: $CMD was not successful!!! Exit status code $?"
 	fi
 done	
 
