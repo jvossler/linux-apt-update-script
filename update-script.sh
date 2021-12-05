@@ -35,9 +35,6 @@ elif
 then
        echo "Error running $CMD on $(date), exit status code: $?" >> /home/j/scripts/update-log.txt
 fi
-
-
 }
-
 
 system_update
