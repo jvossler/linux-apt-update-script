@@ -1,4 +1,11 @@
 #!/bin/bash
+
+### Changes that still need to be made ###
+# 1. Change the system report log location to a 
+# neutral/consistent file location to ease sharing.
+# 2. Verify error report messages work through 
+# intentional erroring out and testing.
+
 list_of_commands=(
 'apt update -y'
 'apt upgrade -y'
